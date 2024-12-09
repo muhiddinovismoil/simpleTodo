@@ -1,11 +1,12 @@
 import User from "../models/users.module";
-export const registerService = async () => {
+import { hashPassword, comparePassword } from "../helpers/bcrypt";
+export const registerService = async (data) => {
     try {
     } catch (error) {
         throw new Error(error);
     }
 };
-export const loginService = async () => {
+export const loginService = async (data) => {
     try {
     } catch (error) {
         throw new Error(error);

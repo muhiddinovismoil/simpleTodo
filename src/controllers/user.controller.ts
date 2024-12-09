@@ -1,4 +1,10 @@
 import { Request, Response } from "express";
+import {
+    getAllUsersService,
+    getUsersByIdService,
+    updateUserByIdService,
+    deleteUserByIdService,
+} from "../service/users.service";
 export function getAllUsersCon(req: Request, res: Response) {
     try {
     } catch (error) {
